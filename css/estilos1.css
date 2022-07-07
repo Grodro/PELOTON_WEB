@@ -1,0 +1,112 @@
+*{
+    margin: 15;
+    padding: 0;
+    box-sizing: border;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: url(/images/IMAGENPPAL.jpg);
+    background-size: cover;
+    
+}
+/*Boton-Modal*/
+.boton-modal{
+    padding: 40px;
+    background-color: none;
+}
+.boton-modal label{
+    padding: 10px 15px;
+    background-color: #012970;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    background-color: #012970;
+}
+/*Fin Boton-Modal*/
+
+/*Ventana Modal*/
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    background: #7496b6;
+    opacity: 0.60;
+    padding: 15px;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 400px;
+    border-radius: 8px;
+    
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal btn close{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.content-modal{
+    width: 90%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+}
+.content-modal h2{
+    color: #012970;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.div{
+    margin: 2em 0;
+}
+.div label{
+    width: 10%;
+    float: left;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    border: none;
+    padding: 7px 10px;
+    background-color: #012970;
+    color: #ffff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 20px;
+    border-bottom: 2px solid #ebeef4; 
+   
+}
+.content-modal .btn-cerrar label:hover{
+    background: #4154f1;
+    border-bottom: 2px solid #ebeef4;
+}
+.cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+
+

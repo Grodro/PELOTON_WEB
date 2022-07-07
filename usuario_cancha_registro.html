@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_cancha_registro.css">
+  </head>  
+  <body>
+    <form class="formulario">      
+        <h3>Registro de canchas</h3>
+        <div class="contenedor">    
+      <form class="formulario" action="/usuariocancha/registro" method="POST" enctype="multipart/form-data">
+      <!--Nombre completo del responsable-->
+          <div class="input-contenedor">
+            <input type="text" placeholder= "Nombre del responsable" required name="nombre" th:value="${nombre}">
+          </div>
+            <!--Correo electrónico-->
+          <div class="input-contenedor">     
+            <input type="text" placeholder= "Correo electrónico" required name="mail" th:value="${mail}">  
+        </div>
+            <!--Contraseña-->
+         <div class="input-contenedor">                  
+            <input type="password" placeholder= "Contraseña" required name="clave1" th:value="${clave1}">   
+        </div>
+            <!--Repetir contraseña-->
+          <div class="input-contenedor">             
+            <input type="password" placeholder= "Repetir contraseña" required name="clave2" th:value="${clave2}">           
+          </div> 
+            <!--Numero celular-->
+         <div class="input-contenedor">          
+            <input type="text" placeholder= "Número celular" required name="celular" th:value="${celular}">   
+        </div>  
+            <!--Precio turno--> 
+         <div class="input-contenedor">       
+           <input type="text" placeholder= "Precio turno" required name="precio" th:value="${precio}">   
+        </div>     
+            <!--Elección de Deportes--> 
+        <div>
+         <label for="deporte">Deportes</label><select name="deportes"> 
+        <option>Futbol</option> 
+        <option>Basquet</option> 
+        <option>Voley</option> 
+        <option>Tenis</option> 
+        </select> <th:value="${deporte}">
+        </div>
+         <!--Foto de perfil--> 
+       <div class="input-contenedor">      
+        <input type="file" placeholder= "foto" required name="archivo" th:value="${archivo}">  
+       <div>     
+         <!--Mensaje de éxito/error-->  
+        <div th:if="${exito}!=null" class="feedback_bueno">
+          <h5>Éxito</h5>
+          <p th:text="${exito}" style="color: green;"></p>
+        </div>
+        <div th:if="${error}!=null" class="feedback_malo">
+          <h5>Error</h5>
+          <p th:text="${error}" style="color: red;"></p>
+        </div>   
+      <!--Botón registrar-->    
+        <div class="btn-cerrar">  
+          <input type="submit" value="Registrar" class="button"> 
+          <p>Al registrarte aceptas nuestras condiciones de uso y politicas de privacidad</p>
+<p>¿Ya tienes cuenta?<a class="link" href="usuario_cancha_login.html">Iniciar sesión</a></p>
+        </div>      
+      </form> 
+    </body>
+</html>                                          
+      
+  
+                   
+  
