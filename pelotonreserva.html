@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resultados de Búsqueda- Canchas</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+        <!-- Bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Encontrá tu cancha</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Que nada detenga tu pasión, reserva ahora tu cancha.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder text-center">Realizá tu búsqueda</h2>
+                <p class="text-center">Encontrá la cancha que buscas.</p>
+                <div class="btn-group mb-5 mt-4">
+                    
+                    <form action="" method="POST" class="text-center form-inline">
+                                <select name="deporte" id="deporte" class="btn btn-primary ml-2">
+                                    <option selected value="">Deportes Todos</option>
+                                    <option value="Fubtol">Fúbtol</option>
+                                    <option value="Ténis">Ténis</option>
+                                    <option value="Basketball">Basketball</option>
+                                    <option value="Jockey">Jockey</option>
+                                    <option value="Voleiball">Voleiball</option>
+                                </select>
+
+                                <select name="localidad" id="localidad" class="btn btn-primary ml-2">
+                                    <option selected value="">Localidades Todas</option>
+                                    <option value="Fubtol">CABA</option>
+                                    <option value="Ténis">San Isidro</option>
+                                    <option value="Basketball">Tigre</option>
+                                    <option value="Jockey">San Martin</option>
+                                    <option value="Voleiball">Campana</option>
+                                </select>
+
+                                <input type="number" placeholder="Precio máximo" class="form-control ml-2" min="1000" max="3000">
+                            
+                                
+                                <input type="date" id="start" class="form-control ml-2" name="trip-start" value="2022-06-06"
+                                min="2022-06-06" max="2023-06-06">
+
+                                <input type="date" id="start" class="form-control ml-2" name="trip-start" value="2022-12-06"
+                                min="2022-06-06" max="2023-06-06">
+
+                                <button type="submit" class="btn btn-success  ml-2"><i class="fa fa-search text-white"></i> Buscar</button>
+                    </form>
+                </div>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://www.portafolio.co/files/article_multimedia/uploads/2019/07/02/5d1bb84949a44.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Cancha 3 de febrero</h5>
+                                    <p>Buenos Aires, CABA</p>
+                                    <p>Borges 5507</p>
+                                    <!-- Product price-->
+                                    $2.000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Ver más</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://ccmetropolis.com.co/wp-content/uploads/2020/12/IMG_2314-e1607608227865.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Cancha 3 de febrero</h5>
+                                    <p>Buenos Aires, CABA</p>
+                                    <p>Av. Rivadavia 6003</p>
+                                    <!-- Product price-->
+                                    $2.000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Ver más</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="data:image/jpeg;base64,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" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Campin</h5>
+                                    <p>Buenos Aires, CABA</p>
+                                    <p>Av. Lacroze 2507</p>
+                                    <!-- Product price-->
+                                    $1.500
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Ver más</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://paranainforma.com/subidos/2021/04/o_1595159082.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Cancha Maradó</h5>
+                                    <p>Buenos Aires, CABA</p>
+                                    <p>Av. Alvarez Thomas 1504</p>
+                                    <!-- Product price-->
+                                    $1.000
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Ver más</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://i.planetaperu.pe/images/2018/0207/194127-alquiler-de-cancha-de-voley-20180207150501522.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">La pelota no se mancha</h5>
+                                    <p>Buenos Aires, San Isidro</p>
+                                    <p>Junin 3355</p>
+                                    <!-- Product price-->
+                                    $2.500
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Ver más</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://civideportes.com.co/wp-content/uploads/2020/08/asphalt-tennis-court-5354328_640.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Pelotazo</h5>
+                                    <p>Buenos Aires, Tigre</p>
+                                    <p>Sarmiento 2073</p>
+                                    <!-- Product price-->
+                                    $1.800
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Ver más</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/Hgq7CiFFiuY/maxresdefault.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Estrella Norte</h5>
+                                    <p>Buenos Aires, La Ferrere</p>
+                                    <p>Eva Perón 1991</p>
+                                    <!-- Product price-->
+                                    $2.300
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Ver más</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://luismiguelguerrero.files.wordpress.com/2009/10/basketball.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Cancha 9 de julio</h5>
+                                    <p>Buenos Aires, Campana</p>
+                                    <p>Av. Lincoln 1204</p>
+                                    <!-- Product price-->
+                                    $1.600
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><button class="btn btn-outline-dark mt-auto" type="button" data-toggle="modal" data-target="#exampleModal">Ver más</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Paginación -->
+                
+                <nav aria-label="Page navigation example ">
+                    <ul class="pagination centrar font-weight-bold">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        
+            
+
+        </section>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <section class="py-5">
+                    <div class="container px-4 px-lg-5 my-5">
+                        <div class="row gx-4 gx-lg-5 align-items-center">
+                            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://luismiguelguerrero.files.wordpress.com/2009/10/basketball.jpg" alt="..." /></div>
+                            <div class="col-md-6">
+                                <div class="small mb-1">Buenos Aires, Campana</div>
+                                <div class="small mb-1">Av. Lincoln 1204</div>
+                                <h1 class="display-5 fw-bolder">Cancha 9 de julio</h1>
+                                
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
+                                <form action="" method="get">
+                                        <div class="fs-5 mb-5">
+                                            <span class="mb-2">Precio: $1.600</span> </br>
+                                            <span class="mb-2">Cancha de: </span> 
+                                            <select name="deporte" id="deporte" class="form-control">
+                                                <option value="Fubtol">Seleccionar Deporte</option>
+                                                <option value="Fubtol">Fúbtol</option>
+                                                <option value="Ténis">Ténis</option>
+                                                <option value="Basketball">Basketball</option>
+                                                <option value="Jockey">Jockey</option>
+                                                <option value="Voleiball">Voleiball</option>
+                                            </select>
+                                        </br>
+                                            <span class="mb-2">Fecha de reserva</span>
+                                            <input type="date" id="start" class="form-control ml-2 mb-2" name="trip-start" value="2022-06-06"
+                                        min="2022-06-06" max="2023-06-06">
+                                            <span class="mb-2">Hora de Reserva</span>
+                                            <input class="mb-2 form-control" type="number" id="yourId" name="yourName" min="1" max="24">
+                                        </div>
+                                        <div class="d-flex">
+                                            <button class="btn btn-outline-dark flex-shrink-0" type="submit">
+                                                <i class="bi-cart-fill me-1"></i>
+                                                Reservar
+                                            </button>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Pelotazo 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- Font Awesome JS-->
+        <script src="https://use.fontawesome.com/c2724fa217.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+        
