@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
   background-position: center top;
   background-repeat: repeat;
-  background-image: url("/images/IMAGENPPAL.jpg");
+  background-image: url("IMAGENPPAL.jpg");
 }
 @media (max-width: 1199px) {
   #main {
